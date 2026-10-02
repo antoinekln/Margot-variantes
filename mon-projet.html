@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mon projet · Atelier Baujard</title>
+<meta name="description" content="Donnez la date de votre mariage et votre ambiance : l’atelier vous montre un calendrier de création.">
+<meta name="theme-color" content="#6b1f3a">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Atelier Baujard">
+<meta property="og:title" content="Mon projet · Atelier Baujard">
+<meta property="og:description" content="Donnez la date de votre mariage et votre ambiance : l’atelier vous montre un calendrier de création.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.fr/mon-projet.html">
+<meta property="og:image" content="https://VOTRE-DOMAINE.fr/assets/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Jost:wght@300;400&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="hd"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Atelier Baujard, accueil">Atelier<br>Baujard</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  <nav id="menu" class="nav" aria-label="Navigation principale"><a href="mariee.html">Mariée</a><a href="cortege.html">Cortège</a><a href="ennoblissement.html">Ennoblissement</a><a href="creations.html">Créations</a><a href="atelier.html">L’atelier</a><a class="btn" href="mon-projet.html">Mon projet</a></nav>
+</div></header>
+<main id="main">
+<section class="sec" style="padding-top:clamp(40px,6vw,72px)"><div class="wrap">
+<div class="wz" id="wz">
+  <div class="wz-top"><button class="wz-back" type="button" hidden>← Retour</button><span class="wz-count" style="margin-left:auto">1 / 3</span></div>
+  <div class="wz-bar" aria-hidden="true"><i></i></div>
+
+  <div class="pane" data-pane="1">
+    <h1>Quand est votre mariage&nbsp;?</h1>
+    <p class="lead">Nous en déduisons votre calendrier de création.</p>
+    <div class="date-row"><label class="sr" for="wzDate">Date du mariage</label><input id="wzDate" type="date"><button class="btn" id="wzDateOk" type="button">Continuer</button></div>
+    <p class="date-err" id="wzDateErr" role="alert"></p>
+    <button class="skip-link" id="wzDateSkip" type="button">Je n’ai pas encore de date</button>
+  </div>
+
+  <div class="pane" data-pane="2" hidden>
+    <h2>Pour qui&nbsp;?</h2>
+    <p class="lead">Choisissez ce qui vous correspond.</p>
+    <div class="choices">
+      <button class="choice" data-who="mariee" type="button"><span>Ma robe de mariée<small>Une robe créée de A à Z</small></span></button>
+      <button class="choice" data-who="cortege" type="button"><span>Un cortège<small>Demoiselles d’honneur, mères, enfants</small></span></button>
+      <button class="choice" data-who="ennoblissement" type="button"><span>Une pièce à transformer<small>Broderie, perlage, dentelle, reprise</small></span></button>
+    </div>
+  </div>
+
+  <div class="pane" data-pane="3" hidden>
+    <h2>Quelle ambiance vous attire&nbsp;?</h2>
+    <p class="lead">Un choix suffit, nous affinerons ensemble.</p>
+    <div class="styles"><button class="style" data-style="epure"><div class="ph"><img src="assets/img/creation-01.jpg" width="765" height="1024" alt="Mariée de profil en robe de satin ivoire" loading="lazy" decoding="async"></div><div><b>Épuré</b><small>Lignes nettes, matières fluides.</small></div></button><button class="style" data-style="romantique"><div class="ph"><img src="assets/img/creation-05.jpg" width="765" height="1024" alt="Mariée en mouvement, jupe fluide" loading="lazy" decoding="async"></div><div><b>Romantique</b><small>Mouvement, tulle, dentelle légère.</small></div></button><button class="style" data-style="precieux"><div class="ph"><img src="assets/img/creation-08.jpg" width="765" height="1024" alt="Robe en dentelle ancienne sur mannequin" loading="lazy" decoding="async"></div><div><b>Précieux</b><small>Dentelle, broderies, perles.</small></div></button></div>
+  </div>
+
+  <div class="pane" data-pane="4" hidden>
+    <h2>Votre projet</h2>
+    <div class="tags" id="resTags" style="margin-top:20px"></div>
+    <div class="res"><img id="resImg" src="" alt="" width="765" height="1024"><div><h3 id="resName"></h3><p id="resText"></p></div></div>
+    <h3 style="margin-bottom:28px">Votre calendrier</h3>
+    <div id="resPlan"></div>
+    <div class="row res-cta"><a class="btn" href="rendez-vous.html">Prendre rendez-vous</a><button class="skip-link" id="wzReset" type="button" style="margin:0">Recommencer</button></div>
+  </div>
+</div>
+</div></section>
+</main>
+<footer class="ft"><div class="wrap">
+  <div><a class="logo" href="index.html">Atelier<br>Baujard</a><p>Robes de mariée sur mesure &amp; ennoblissement · Paris</p></div>
+  <ul>
+    <li><a href="rendez-vous.html">Rendez-vous</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a class="js-email" href="rendez-vous.html">E-mail</a></li>
+    <li><a class="js-instagram" href="https://www.instagram.com/atelierbaujard/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
+  <p class="legal">© <span id="year">2026</span> Atelier Baujard · <a href="mentions-legales.html" style="font-size:inherit;letter-spacing:0;text-transform:none">Mentions légales</a></p>
+</div></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

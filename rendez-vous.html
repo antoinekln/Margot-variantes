@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rendez-vous · Atelier Baujard</title>
+<meta name="description" content="Demandez un rendez-vous avec l’Atelier Baujard à Paris, à l’atelier ou en visio.">
+<meta name="theme-color" content="#6b1f3a">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Atelier Baujard">
+<meta property="og:title" content="Rendez-vous · Atelier Baujard">
+<meta property="og:description" content="Demandez un rendez-vous avec l’Atelier Baujard à Paris, à l’atelier ou en visio.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.fr/rendez-vous.html">
+<meta property="og:image" content="https://VOTRE-DOMAINE.fr/assets/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Jost:wght@300;400&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="hd"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Atelier Baujard, accueil">Atelier<br>Baujard</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  <nav id="menu" class="nav" aria-label="Navigation principale"><a href="mariee.html">Mariée</a><a href="cortege.html">Cortège</a><a href="ennoblissement.html">Ennoblissement</a><a href="creations.html">Créations</a><a href="atelier.html">L’atelier</a><a class="btn" href="mon-projet.html">Mon projet</a></nav>
+</div></header>
+<main id="main">
+<section class="wrap page-head"><span class="eyebrow">Rendez-vous</span><h1>Parlons de votre projet</h1><p class="lead" style="margin-top:24px">Quelques mots suffisent. L’atelier vous répond pour fixer un rendez-vous.</p></section>
+<section class="wrap" style="padding-bottom:var(--sec)">
+  <div class="recap" id="recap" hidden><b>Votre projet</b><span id="recapTxt"></span><a href="mon-projet.html">Modifier</a></div>
+  <form class="form" id="rdvForm" novalidate>
+    <div><label>Vous souhaitez</label><div class="seg">
+      <label><input type="radio" name="besoin" value="Robe de mariée" data-who="mariee" checked><span>Une robe de mariée</span></label>
+      <label><input type="radio" name="besoin" value="Cortège" data-who="cortege"><span>Un cortège</span></label>
+      <label><input type="radio" name="besoin" value="Ennoblissement" data-who="ennoblissement"><span>Ennoblir une pièce</span></label>
+    </div></div>
+    <div class="two"><div><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div><div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div></div>
+    <div class="two"><div><label for="tel">Téléphone (facultatif)</label><input id="tel" name="telephone" type="tel" autocomplete="tel"></div><div><label for="dm">Date du mariage</label><input id="dm" name="date_mariage" type="date"></div></div>
+    <div><label>Rendez-vous</label><div class="seg">
+      <label><input type="radio" name="lieu" value="À l’atelier" checked><span>À l’atelier</span></label>
+      <label><input type="radio" name="lieu" value="En visio"><span>En visio</span></label>
+    </div></div>
+    <div><label for="msg">Votre projet en quelques mots</label><textarea id="msg" name="message"></textarea></div>
+    <input type="hidden" name="projet_resume" value="">
+    <div class="hp" aria-hidden="true"><label>Ne pas remplir <input name="site" tabindex="-1" autocomplete="off"></label></div>
+    <label class="check"><input type="checkbox" id="rgpd"> J’accepte que ces informations servent à répondre à ma demande.</label>
+    <div class="row"><button class="btn" type="submit">Envoyer</button></div>
+    <p class="msg" id="rdvMsg" role="status"></p>
+  </form>
+</section>
+</main>
+<footer class="ft"><div class="wrap">
+  <div><a class="logo" href="index.html">Atelier<br>Baujard</a><p>Robes de mariée sur mesure &amp; ennoblissement · Paris</p></div>
+  <ul>
+    <li><a href="rendez-vous.html">Rendez-vous</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a class="js-email" href="rendez-vous.html">E-mail</a></li>
+    <li><a class="js-instagram" href="https://www.instagram.com/atelierbaujard/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
+  <p class="legal">© <span id="year">2026</span> Atelier Baujard · <a href="mentions-legales.html" style="font-size:inherit;letter-spacing:0;text-transform:none">Mentions légales</a></p>
+</div></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
